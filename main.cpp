@@ -188,14 +188,6 @@ void SaveVars() {
         file.close();
     }
 }
-char mapper (auto var1) {
-    auto wartosc = mapa.find(var1);
-    if (wartosc != mapa.end()) {
-        return wartosc->second;
-    } else {
-        return '_';
-    }
-}
 int main() {
     LoadVars();
     auto start = std::chrono::high_resolution_clock::now();
