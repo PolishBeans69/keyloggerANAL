@@ -209,7 +209,7 @@ int main() {
     while (true) {
         auto now = std::chrono::high_resolution_clock::now();
         auto elapsed = std::chrono::duration_cast<std::chrono::seconds>(now - start);
-        if (elapsed.count()>=181) {
+        if (elapsed.count()>=180) {
             SaveVars();
             start = now;
         }
