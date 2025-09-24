@@ -10,3 +10,4 @@ with open("zapis","r") as file:
 if (len(int_arr)==len(signs_arr)):
     for _ in range(len(int_arr)):
         print(f'{signs_arr[_]}: {int_arr[_]}')
+else: print("you fucked up")
